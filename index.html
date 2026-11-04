@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026國際化辦學人力資源管理論壇</title>
+  <meta name="description" content="2026國際化辦學人力資源管理論壇 — 活動資訊、特邀嘉賓、活動流程及現場提問。" />
+  <meta property="og:title" content="2026 Human Resource Management in International Education" />
+  <link rel="icon" href="assets/event-logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-lang="tc">
+  <a class="skip-link" href="#main" data-i18n="skip">跳至主要內容</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <img class="brand-logo" data-src="event.logo" alt="" width="40" height="40" />
+        <span class="brand-text" data-text="event.title"></span>
+      </a>
+      <nav class="main-nav" aria-label="Sections">
+        <a href="#info" data-i18n="nav.info">活動資訊</a>
+        <a href="#speakers" data-i18n="nav.speakers">特邀嘉賓</a>
+        <a href="#agenda" data-i18n="nav.agenda">活動流程</a>
+        <a href="#qa" data-i18n="nav.qa">現場提問</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language / 語言">
+        <button type="button" data-lang-btn="tc" lang="zh-Hant">繁</button>
+        <button type="button" data-lang-btn="sc" lang="zh-Hans">简</button>
+        <button type="button" data-lang-btn="en" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 第一模塊：活動資訊 -->
+    <section id="info" class="section hero" aria-labelledby="hero-title">
+      <span id="top"></span>
+      <div class="container bento">
+        <div class="tile tile-title">
+          <p class="eyebrow" data-i18n="hero.eyebrow">學術論壇</p>
+          <h1 id="hero-title" data-text="event.title"></h1>
+          <a class="btn btn-primary" href="#qa" data-i18n="hero.cta">提交現場提問</a>
+        </div>
+        <div class="tile tile-meta">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <p class="meta-label" data-i18n="hero.date">日期</p>
+          <p class="meta-value" data-text="event.date"></p>
+          <p class="meta-sub" data-text="event.dateNote"></p>
+        </div>
+        <div class="tile tile-meta">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <p class="meta-label" data-i18n="hero.time">時間</p>
+          <p class="meta-value" data-text="event.time"></p>
+          <p class="meta-sub" data-text="event.timezone"></p>
+        </div>
+        <div class="tile tile-meta">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <p class="meta-label" data-i18n="hero.venue">地點</p>
+          <p class="meta-value" data-text="event.venue"></p>
+          <p class="meta-sub" data-text="event.address"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第二模塊：特邀嘉賓 -->
+    <section id="speakers" class="section" aria-labelledby="speakers-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="speakers.eyebrow">Keynote Speakers</p>
+          <h2 id="speakers-title" data-i18n="speakers.title">特邀嘉賓</h2>
+          <p class="section-lead" data-i18n="speakers.lead">點擊嘉賓資料卡，查看詳細介紹。</p>
+        </div>
+        <ul class="speaker-grid" id="speaker-grid" role="list"></ul>
+      </div>
+    </section>
+
+    <!-- 第三模塊：活動流程 -->
+    <section id="agenda" class="section section-alt" aria-labelledby="agenda-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="agenda.eyebrow">Programme</p>
+          <h2 id="agenda-title" data-i18n="agenda.title">活動流程</h2>
+        </div>
+        <ol class="timeline" id="timeline" role="list"></ol>
+      </div>
+    </section>
+
+    <!-- 第四模塊：現場提問 -->
+    <section id="qa" class="section" aria-labelledby="qa-title">
+      <div class="container qa-layout">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="qa.eyebrow">Live Q&amp;A</p>
+          <h2 id="qa-title" data-i18n="qa.title">現場提問</h2>
+          <p class="section-lead" data-i18n="qa.lead">歡迎提交你希望向嘉賓提出的問題。主辦方將收集問題，並按現場安排選取提問。</p>
+          <p class="privacy-note" data-i18n="qa.privacy">你提交的內容只供主辦方整理現場提問之用，不會向其他訪客公開。</p>
+        </div>
+        <form class="qa-form" id="qa-form" novalidate>
+          <div class="field">
+            <label for="q-question"><span data-i18n="qa.question">問題內容</span> <span class="req" data-i18n="qa.required">（必填）</span></label>
+            <textarea id="q-question" name="question" rows="5" maxlength="1000" required aria-describedby="q-question-err q-count" data-ph-i18n="qa.questionPh"></textarea>
+            <div class="field-foot">
+              <p class="field-error" id="q-question-err" role="alert" hidden data-i18n="qa.errEmpty">請輸入問題內容。</p>
+              <span class="count" id="q-count">0 / 1000</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="q-name"><span data-i18n="qa.name">姓名</span> <span class="opt" data-i18n="qa.optional">（選填）</span></label>
+              <input id="q-name" name="name" type="text" maxlength="80" autocomplete="name" data-ph-i18n="qa.namePh" />
+            </div>
+            <div class="field">
+              <label for="q-unit"><span data-i18n="qa.unit">所屬單位名稱</span> <span class="opt" data-i18n="qa.optional">（選填）</span></label>
+              <input id="q-unit" name="unit" type="text" maxlength="120" autocomplete="organization" data-ph-i18n="qa.unitPh" />
+            </div>
+          </div>
+<!-- 提交按鈕及主辦方入口 -->
+<div class="qa-submit-area">
+  <button
+    type="submit"
+    class="btn btn-primary btn-submit"
+    id="q-submit"
+  >
+    <span class="spinner" aria-hidden="true"></span>
+
+    <span data-i18n="qa.submit" id="q-submit-label">
+      提交問題
+    </span>
+  </button>
+
+  <a
+    href="#admin"
+    class="admin-link"
+    data-i18n="footer.admin"
+  >
+    主辦方入口
+  </a>
+</div>
+
+<!-- 提交結果訊息 -->
+<div
+  class="form-status"
+  id="form-status"
+  role="status"
+  aria-live="polite"
+  hidden
+></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer partners-footer">
+
+  <!-- 協辦及贊助單位：橫向列 -->
+  <div class="partners-bar">
+    <div class="container partners-inner">
+
+      <!-- 左側：共同協辦 -->
+      <div class="partner-group partner-co">
+        <p class="partner-label" data-i18n="hero.coOrg">
+          共同協辦
+        </p>
+
+        <ul
+          class="partner-logos"
+          id="co-organizers"
+          role="list"
+        ></ul>
+      </div>
+
+      <!-- 右側：贊助單位 -->
+      <div
+        class="partner-group partner-sponsor"
+        id="sponsor-tile"
+      >
+        <p class="partner-label" data-i18n="hero.sponsors">
+          贊助單位
+        </p>
+
+        <ul
+          class="partner-logos"
+          id="sponsors"
+          role="list"
+        ></ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <!-- 嘉賓詳細介紹 -->
+  <dialog class="modal" id="speaker-modal" aria-labelledby="m-name">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-body">
+        <img class="modal-photo" id="m-photo" alt="" width="400" height="400" />
+        <div>
+          <p class="eyebrow" id="m-index"></p>
+          <h3 id="m-name"></h3>
+          <p class="m-title" id="m-title"></p>
+          <p class="m-org" id="m-org"></p>
+          <h4 data-i18n="speakers.bio">個人簡介</h4>
+          <p class="m-bio" id="m-bio"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 主辦方讀取介面（#admin） -->
+  <dialog class="modal admin-modal" id="admin-modal" aria-labelledby="admin-title">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h3 id="admin-title" data-i18n="admin.title">主辦方：已提交問題</h3>
+      <form class="admin-login" id="admin-login">
+        <label for="admin-key" data-i18n="admin.key">管理密碼</label>
+        <div class="admin-login-row">
+          <input id="admin-key" type="password" autocomplete="current-password" required />
+          <button class="btn btn-primary" type="submit" data-i18n="admin.load">讀取問題</button>
+        </div>
+        <p class="field-error" id="admin-err" role="alert" hidden></p>
+      </form>
+      <div id="admin-results" hidden>
+        <div class="admin-toolbar">
+          <p id="admin-count"></p>
+          <div class="admin-actions">
+            <button type="button" class="btn btn-ghost" id="admin-refresh" data-i18n="admin.refresh">重新整理</button>
+            <button type="button" class="btn btn-ghost" id="admin-csv" data-i18n="admin.csv">匯出 CSV</button>
+          </div>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead><tr>
+              <th data-i18n="admin.colId">編號</th>
+              <th data-i18n="admin.colTime">提交時間</th>
+              <th data-i18n="admin.colQ">問題內容</th>
+              <th data-i18n="admin.colName">姓名</th>
+              <th data-i18n="admin.colUnit">所屬單位</th>
+              <th data-i18n="admin.colLang">語言</th>
+            </tr></thead>
+            <tbody id="admin-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="content.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script>
+    (() => {
+      const footer = document.querySelector(
+        ".site-footer.partners-footer"
+      );
+
+      if (!footer) return;
+
+      const updateFooterHeight = () => {
+        const height = Math.ceil(
+          footer.getBoundingClientRect().height
+        );
+
+        document.documentElement.style.setProperty(
+          "--fixed-footer-height",
+          `${height}px`
+        );
+      };
+
+      const observer = new ResizeObserver(updateFooterHeight);
+      observer.observe(footer);
+
+      updateFooterHeight();
+    })();
+  </script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  const DEFAULT_LINE_HEIGHT = 16;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  const PICK_CAPABILITIES = ["pick"];
+  const PICK_CHAIN_LENGTH = 4;
+  const PICK_MAX_TEXT_CHARS = 120;
+  const PICK_MAX_HTML_CHARS = 300;
+
+  function truncate(value, maxChars) {
+    return value.length > maxChars ? value.slice(0, maxChars - 1) + "…" : value;
+  }
+
+  function isPickableElement(element) {
+    return (
+      element instanceof Element &&
+      element !== document.documentElement &&
+      element !== document.body
+    );
+  }
+
+  function resolvePickTarget(x, y) {
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return null;
+    const element = document.elementFromPoint(x, y);
+    return isPickableElement(element) ? element.closest("svg") || element : null;
+  }
+
+  function pickLabel(element) {
+    if (element.id) return element.localName + "#" + element.id;
+    return [element.localName].concat(Array.from(element.classList).slice(0, 2)).join(".");
+  }
+
+  // Only attributes that help find the element in source. data-* values and URL
+  // query strings or fragments can carry tokens.
+  const PICK_ATTRIBUTES = new Set([
+    "id",
+    "class",
+    "name",
+    "type",
+    "role",
+    "alt",
+    "aria-label",
+    "href",
+    "src",
+  ]);
+
+  function pickAttributeValue(attribute) {
+    return attribute.name === "href" || attribute.name === "src"
+      ? attribute.value.split(/[?#]/)[0]
+      : attribute.value;
+  }
+
+  function describePickElement(element) {
+    const chain = [];
+    for (
+      let current = element;
+      isPickableElement(current) && chain.length < PICK_CHAIN_LENGTH;
+      current = current.parentElement
+    ) {
+      chain.unshift(current);
+    }
+    const attributes = Array.from(element.attributes)
+      .filter((attribute) => PICK_ATTRIBUTES.has(attribute.name))
+      .map((attribute) => ` ${attribute.name}="${pickAttributeValue(attribute).replace(/"/g, "&quot;")}"`)
+      .join("");
+    const text = (element.innerText || element.textContent || "").replace(/\s+/g, " ").trim();
+    return {
+      chain: chain.map(pickLabel),
+      html: truncate(`<${element.localName}${attributes}>`, PICK_MAX_HTML_CHARS),
+      text: text ? truncate(text, PICK_MAX_TEXT_CHARS) : undefined,
+    };
+  }
+
+  // Hover asks once per frame, and innerText on a large section forces layout,
+  // so only the rect is re-read while the pointer stays on the same element.
+  // Clicks ask for fresh details since the page may have changed the element.
+  let lastPick = null;
+
+  function describePickTarget(element, fresh) {
+    if (fresh || lastPick?.element !== element) {
+      lastPick = { element, details: describePickElement(element) };
+    }
+    const rect = element.getBoundingClientRect();
+    return {
+      rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height },
+      ...lastPick.details,
+    };
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+      capabilities: PICK_CAPABILITIES,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_PICK") {
+      const element = resolvePickTarget(event.data.x, event.data.y);
+      postToTrustedTop({
+        type: "INLINE_EDIT_PICK_RESULT",
+        seq: event.data.seq,
+        target: element ? describePickTarget(element, event.data.fresh === true) : null,
+      });
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_BY") {
+      const { deltaX, deltaY, deltaMode } = event.data;
+      if (!scrollForwarding || !Number.isFinite(deltaX) || !Number.isFinite(deltaY)) return;
+      if (deltaMode !== 0 && deltaMode !== 1 && deltaMode !== 2) return;
+      const lineHeight =
+        parseFloat(getComputedStyle(document.documentElement).lineHeight) || DEFAULT_LINE_HEIGHT;
+      const scaleX = deltaMode === 1 ? lineHeight : deltaMode === 2 ? window.innerWidth : 1;
+      const scaleY = deltaMode === 1 ? lineHeight : deltaMode === 2 ? window.innerHeight : 1;
+      // The selection overlay receives the wheel event instead of this iframe.
+      // Instant scrolling preserves trackpad deltas even on smooth-scroll sites.
+      window.scrollBy({ left: deltaX * scaleX, top: deltaY * scaleY, behavior: "instant" });
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
