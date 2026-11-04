@@ -4,6 +4,6 @@
    （設定方法見 README.md 及 google-apps-script/Code.gs）
    ========================================================= */
 window.SITE_CONFIG = {
-  QUESTION_ENDPOINT: "port/8000/api/questions",
+  QUESTION_ENDPOINT: "https://script.google.com/macros/s/AKfycbyj9X0G5pXK6fdjWa0nFM44SzsSTuAunvS7CLuxCHdCDB45uYT8wMBESKtcF18FsIzH/exec",
   DEFAULT_LANG: "tc" // tc 繁體 / sc 簡體 / en 英文
 };
