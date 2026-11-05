@@ -55,7 +55,6 @@ function renderOrgs(listEl, items) {
       <li>
         <button type="button" class="speaker-card" data-speaker="${i}" aria-haspopup="dialog">
           <span class="speaker-photo"><img src="${esc(s.photo)}" alt="" width="400" height="400" loading="lazy" /></span>
-          <span class="speaker-num">${String(i + 1).padStart(2, "0")}</span>
           <span class="speaker-name">${esc(L(s.name))}</span>
           <span class="speaker-title">${esc(L(s.title))}</span>
           <span class="speaker-org">${esc(L(s.org))}</span>
