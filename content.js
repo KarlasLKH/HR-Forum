@@ -17,19 +17,8 @@ window.SITE_CONTENT = {
     time: { tc: "早上09:00", sc: "早上09:00", en: "09:00 AM" },
     timezone: { tc: "澳門時間（GMT+8）", sc: "澳门时间（GMT+8）", en: "Macau time (GMT+8)" }, // 留空則不顯示
     venue: { tc: "澳門城市大學", sc: "澳门城市大学", en: "City University of Macau" },
-    address: { tc: "文化中心展覽廳 及 何賢會議中心", sc: "文化中心展览厅 及 何贤会议中心", en: "Cultural Center Exhibition Hall & Ho Yin Conference Hall" } // 如有詳細地址可填入；留空則不顯示
+    address: { tc: "何賢會議中心 及 文化中心展覽廳", sc: "何贤会议中心 及 文化中心展览厅", en: "Ho Yin Conference Hall & Cultural Center Exhibition Hall" } // 如有詳細地址可填入；留空則不顯示
   },
-
-  /* 共同協辦大學（建議 Logo 320 × 120 px） */
-  coOrganizers: [
-    { name: { tc: "協辦大學 A", sc: "协办大学 A", en: "Co-organizing University A" }, logo: "assets/university-a-logo.svg", url: "" },
-    { name: { tc: "協辦大學 B", sc: "协办大学 B", en: "Co-organizing University B" }, logo: "assets/university-b-logo.svg", url: "" }
-  ],
-
-  /* 贊助單位：目前為空，區塊不會顯示。新增方式示例： */
-  sponsors: [
-    { name: { tc: "贊助單位名稱", sc: "赞助单位名称", en: "Sponsor Name" }, logo: "assets/sponsor-1.svg", url: "" }
-  ],
 
   /* ---------- 第二模塊：特邀嘉賓【示例】 ---------- */
   speakers: [
@@ -78,6 +67,6 @@ window.SITE_CONTENT = {
     { start: "11:00", end: "12:00", item: { tc: "圓桌討論", sc: "圆桌讨论", en: "Round Table Discussion" }, host: { tc: "主持：澳門城市大學", sc: "主持：澳门城市大学", en: "Moderator: City University of Macau" }, note: { tc: "分享：澳門城市大學、昆山杜克大學、北師香港浸會大學、香港科技大學（廣州）", sc: "分享：澳门城市大学、昆山杜克大学、北师香港浸会大学、香港科技大学（广州）", en: "Speakers: City University of Macau, Duke Kunshan University, Beijing Normal-Hong Kong Baptist University, The Hong Kong University of Science and Technology (Guangzhou)" } },
     { start: "12:00", end: "14:00", item: { tc: "高管午敘", sc: "高管午叙", en: "Executive Lunch" }, host: { tc: "美高梅品牌策劃高級副總裁廖頴琦女士", sc: "美高梅品牌策划高级副总裁廖頴琦女士", en: "Ms. Catarina Lio, Senior Vice President (Brand Marketing) of MGM" }, note: {} },
     { start: "14:00", end: "17:00", item: { tc: "沉浸未來‧對話傳統《澳門2049》", sc: "沉浸未来·对话传统《澳门2049》", en: "Tradition Reborn in a Future Theatre 'Macau 2049'" }, host: { tc: "美高梅", sc: "美高梅", en: "MGM" }, note: {} },
-    { start: "17:00", end: "17:30", item: { tc: "論壇回顧與閉幕", sc: "论坛回顾与闭幕", en: "Forum Reflection & Closin" }, host: { tc: "協辦大學代表", sc: "协办大学代表", en: "Representatives of the co-organizing universities" }, note: {} }
+    { start: "17:00", end: "17:30", item: { tc: "論壇回顧與閉幕", sc: "论坛回顾与闭幕", en: "Forum Reflection & Closing" }, host: { tc: "協辦大學代表", sc: "协办大学代表", en: "Representatives of the co-organizing universities" }, note: {} }
   ]
 };
