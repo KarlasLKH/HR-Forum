@@ -508,18 +508,6 @@ body[data-lang="en"] .tile-title h1 {
   object-fit: cover;
 }
 
-.speaker-num {
-  position: absolute;
-  top: calc(var(--space-4) + 12px);
-  left: calc(var(--space-4) + 12px);
-  background: var(--theme-green);
-  color: #FFFFFF;
-  font-size: var(--text-xs);
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 999px;
-}
-
 .speaker-name {
   font-family: var(--font-display);
   font-size: var(--text-lg);
@@ -1217,11 +1205,6 @@ body[data-lang="en"] .tile-title h1 {
   .speaker-photo {
     grid-row: 1 / span 5;
     margin: 0;
-  }
-
-  .speaker-num {
-    top: calc(var(--space-3) + 6px);
-    left: calc(var(--space-3) + 6px);
   }
 
   .speaker-name,
