@@ -20,6 +20,17 @@ window.SITE_CONTENT = {
     address: { tc: "何賢會議中心 及 文化中心展覽廳", sc: "何贤会议中心 及 文化中心展览厅", en: "Ho Yin Conference Hall & Cultural Center Exhibition Hall" } // 如有詳細地址可填入；留空則不顯示
   },
 
+  /* 共同協辦大學（建議 Logo 320 × 120 px） */
+  coOrganizers: [
+    { name: { tc: "協辦大學 A", sc: "协办大学 A", en: "Co-organizing University A" }, logo: "assets/university-a-logo.svg", url: "" },
+    { name: { tc: "協辦大學 B", sc: "协办大学 B", en: "Co-organizing University B" }, logo: "assets/university-b-logo.svg", url: "" }
+  ],
+
+  /* 贊助單位：目前為空，區塊不會顯示。新增方式示例： */
+  sponsors: [
+    { name: { tc: "贊助單位名稱", sc: "赞助单位名称", en: "Sponsor Name" }, logo: "assets/sponsor-1.svg", url: "" }
+  ],
+   
   /* ---------- 第二模塊：特邀嘉賓【示例】 ---------- */
   speakers: [
     {
