@@ -3,7 +3,7 @@ window.UI_TEXT = {
   tc: {
     skip: "跳至主要內容",
     nav: { info: "活動資訊", speakers: "特邀嘉賓", agenda: "活動流程", qa: "現場提問" },
-    hero: { eyebrow: "學術論壇", cta: "提交現場提問", date: "日期", time: "時間", venue: "地點", coOrg: "共同協辦", sponsors: "贊助單位", logoAlt: "論壇 Logo" },
+    hero: { eyebrow: "學術論壇", cta: "提交現場提問", date: "日期", time: "時間", venue: "地點", coOrg: "共同協辦", sponsors: "支持單位", logoAlt: "論壇 Logo" },
     speakers: { eyebrow: "Keynote Speakers", title: "特邀嘉賓", lead: "點擊嘉賓資料卡，查看詳細介紹。", more: "查看詳細介紹", bio: "個人簡介", index: "特邀嘉賓" },
     agenda: { eyebrow: "Programme", title: "活動流程" },
     qa: {
@@ -29,7 +29,7 @@ window.UI_TEXT = {
   sc: {
     skip: "跳至主要内容",
     nav: { info: "活动资讯", speakers: "特邀嘉宾", agenda: "活动流程", qa: "现场提问" },
-    hero: { eyebrow: "学术论坛", cta: "提交现场提问", date: "日期", time: "时间", venue: "地点", coOrg: "共同协办", sponsors: "赞助单位", logoAlt: "论坛 Logo" },
+    hero: { eyebrow: "学术论坛", cta: "提交现场提问", date: "日期", time: "时间", venue: "地点", coOrg: "共同协办", sponsors: "支持单位", logoAlt: "论坛 Logo" },
     speakers: { eyebrow: "Keynote Speakers", title: "特邀嘉宾", lead: "点击嘉宾资料卡，查看详细介绍。", more: "查看详细介绍", bio: "个人简介", index: "特邀嘉宾" },
     agenda: { eyebrow: "Programme", title: "活动流程" },
     qa: {
@@ -55,7 +55,7 @@ window.UI_TEXT = {
   en: {
     skip: "Skip to main content",
     nav: { info: "Event", speakers: "Speakers", agenda: "Programme", qa: "Live Q&A" },
-    hero: { eyebrow: "Academic Forum", cta: "Submit a question", date: "Date", time: "Time", venue: "Venue", coOrg: "Co-organized by", sponsors: "Sponsors", logoAlt: "Forum logo" },
+    hero: { eyebrow: "Academic Forum", cta: "Submit a question", date: "Date", time: "Time", venue: "Venue", coOrg: "Co-organized by", sponsors: "Supporting Units", logoAlt: "Forum logo" },
     speakers: { eyebrow: "Keynote Speakers", title: "Keynote Speakers", lead: "Select a speaker card to read the full profile.", more: "View profile", bio: "Biography", index: "Keynote Speaker" },
     agenda: { eyebrow: "Programme", title: "Programme" },
     qa: {
