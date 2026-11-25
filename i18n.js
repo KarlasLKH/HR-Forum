@@ -55,7 +55,7 @@ window.UI_TEXT = {
   en: {
     skip: "Skip to main content",
     nav: { info: "Event", speakers: "Speakers", agenda: "Programme", qa: "Live Q&A" },
-    hero: { eyebrow: "Academic Forum", cta: "Submit a question", date: "Date", time: "Time", venue: "Venue", coOrg: "Co-organized by", sponsors: "Supporting Units", logoAlt: "Forum logo" },
+    hero: { eyebrow: "Academic Forum", cta: "Submit a question", date: "Date", time: "Time", venue: "Venue", coOrg: "Co-organized by", sponsors: "Supporting Unit", logoAlt: "Forum logo" },
     speakers: { eyebrow: "Keynote Speakers", title: "Keynote Speakers", lead: "Select a speaker card to read the full profile.", more: "View profile", bio: "Biography", index: "Keynote Speaker" },
     agenda: { eyebrow: "Programme", title: "Programme" },
     qa: {
